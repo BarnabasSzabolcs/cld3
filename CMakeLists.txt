@@ -22,7 +22,7 @@ message(STATUS "PROTO_HDRS= ${PROTO_HDRS}")
 
 add_definitions(-fPIC) # Position Independant Code
 add_definitions(-D_GLIBCXX_USE_CXX11_ABI=0)
-add_definitions(-std=c++11) # Needed for std::to_string(), ...
+add_definitions(-std=c++14) # Needed for std::to_string(), ...
 
 include_directories(${CMAKE_CURRENT_BINARY_DIR} ${Protobuf_INCLUDE_DIRS}) # needed to include generated pb headers
 
